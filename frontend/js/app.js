@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = document.getElementById("password").value;
 
       try {
-        const res = await fetch("http://localhost:3000/api/login", {
+        const res = await fetch("http://34.9.176.56:3000/api/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, password }),
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = document.getElementById("password").value;
 
       try {
-        const res = await fetch("http://localhost:3000/api/register", {
+        const res = await fetch("http://34.9.176.56:3000/api/register", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name, email, password }),
